@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    } */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: hsl(30, 38%, 92%);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      max-width: 655px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    .text-content {
+      background-color: hsl(0, 0%, 100%);
+      padding: 30px;
+    }
+
+    .text-content h2 {
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+      font-size: 14px;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+    }
+
+    .text-content h1 {
+      font-family: 'Fraunces', serif;
+      font-size: 37px;
+      margin-bottom: 20px;
+      line-height: 36px;
+      color: hsl(212, 21%, 14%);
+    }
+
+    .description {
+      font-weight: 500;
+      color: hsl(228, 12%, 48%);
+      line-height: 22px;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .current-price {
+      font-family: 'Fraunces', serif;
+      color: hsl(158, 36%, 37%);
+      font-size: 37px;
+      margin-right: 20px;
+    }
+
+    .prev-price {
+      color: hsl(228, 12%, 48%);
+      text-decoration: line-through;
+      font-weight: 500;
+    }
+
+    .text-content button {
+      width: 100%;
+      padding: 15px;
+      border-radius: 10px;
+      border: none;
+      background-color: hsl(158, 36%, 37%);
+      color: hsl(0, 0%, 100%);
+      cursor: pointer;
+      transition: background-color .35s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    .text-content button:hover {
+      background-color: hsl(158, 32%, 54%);
+    }
+
+    .img-desktop {
+      display: none;
+    }
+
+    .img-mobile {
+      display: inline-block;
+    }
+
+    @media (min-width:719px) {
+      .card {
+        flex-direction: row;
+      }
+
+      .img-desktop {
+        display: inline-block;
+      }
+
+      .img-mobile {
+        display: none;
+      }
+    }
+
+    .attribution {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <div style="flex:1;">
+      <img class="img-desktop" src="./images/image-product-desktop.jpg" alt="" style="width: 100%;">
+      <img class="img-mobile" src="./images/image-product-mobile.jpg" alt="" style="width: 100%;">
+    </div>
+    <div class="text-content" style="flex:1;">
+      <h2>PERFUME</h2>
+      <h1>Gabrielle Essence Eau De Parfum</h1>
+      <p class="description">A floral, solar and voluptuous interpretation composed by Olivier Polge,
+        Perfumer-Creator for the House of CHANEL.</p>
+      <div class="price">
+        <p class="current-price">$149.99</p>
+        <p class="prev-price">$169.99</p>
+      </div>
+      <button>
+        <img src="./images/icon-cart.svg" alt="" style="width: 14px;margin-right: 10px;">
+        <span>Add to Cart</span>
+      </button>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/roricrimson">RoriCrimson</a>.
+  </div>
+</body>
+
+</html>
